@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/garethahealy/camel-jose.svg)](https://travis-ci.org/garethahealy/camel-jose)
 
 # camel-jose
-Still work-in-progress
+Still work-in-progress. See: https://bitbucket.org/b_c/jose4j/wiki/Home
 
 # Build and Install
 - mvn clean install
