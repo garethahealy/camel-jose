@@ -1,3 +1,5 @@
+![Image of Travis-CI](https://api.travis-ci.org/garethahealy/camel-jose.svg?branch=master)
+
 # camel-jose
 Still work-in-progress
 

@@ -16,7 +16,7 @@ public class VerifacationProcessor implements Processor {
     @Override
     public void process(Exchange exchange) throws Exception {
         Message inMessage = exchange.getIn();
-        String body = inMessage.getBody(String.class);
+        String body = inMessage.getMandatoryBody(String.class);
         PublicKey key = inMessage.getHeader(PublicKey.class.getName(), PublicKey.class);
 
         if (body == null || body.length() <= 0) {
@@ -41,6 +41,5 @@ public class VerifacationProcessor implements Processor {
         }
 
         exchange.getIn().setBody(jws.getPayload(), String.class);
-        ;
     }
 }
