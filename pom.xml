@@ -21,20 +21,22 @@
 
     <parent>
         <groupId>org.apache.camel</groupId>
-        <artifactId>components</artifactId>
-        <version>2.16-SNAPSHOT</version>
+        <artifactId>camel-parent</artifactId>
+        <version>2.16.1</version>
+        <relativePath/>
     </parent>
-
+    <!-- Changed the groupId as this isn't an Official Camel component -->
+    <groupId>org.garethahealy.camel-jose</groupId>
     <artifactId>camel-jose</artifactId>
     <packaging>bundle</packaging>
-    <name>Camel :: JOSE</name>
+    <name>GarethHealy :: Camel :: JOSE</name>
     <description>Camel JSON Object Signing and Encryption (JOSE) support</description>
 
     <properties>
         <camel.osgi.import.before.defaults>
         </camel.osgi.import.before.defaults>
         <camel.osgi.export.pkg>org.apache.camel.component.jose.*</camel.osgi.export.pkg>
-        <camel.osgi.export.service>org.apache.camel.spi.DataFormatResolver;dataformat=json-jose</camel.osgi.export.service>
+        <camel.osgi.export.service>org.apache.camel.spi.DataFormatResolver;dataformat=jose</camel.osgi.export.service>
     </properties>
 
     <dependencies>
