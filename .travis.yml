@@ -20,3 +20,4 @@ cache:
   directories:
   - $HOME/.m2
   - $HOME/.victims
+  - $HOME/.sonar/cache
