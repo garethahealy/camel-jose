@@ -14,7 +14,7 @@ install:
 before_script:
 - ./mvnw dependency:go-offline -B
 script:
-- ./mvnw clean install -B -Dgpg.skip=true
+- ./mvnw clean install -DskipTests=true -B -Dgpg.skip=true
 cache:
   directories:
   - $HOME/.m2
