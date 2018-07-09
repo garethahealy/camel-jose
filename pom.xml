@@ -22,13 +22,12 @@
     <parent>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-parent</artifactId>
-        <version>2.18.0</version>
+        <version>2.21.0</version>
         <relativePath/>
     </parent>
     <!-- Changed the groupId as this isn't an Official Camel component -->
     <groupId>org.garethahealy.camel-jose</groupId>
     <artifactId>camel-jose</artifactId>
-    <packaging>bundle</packaging>
     <name>GarethHealy :: Camel :: JOSE</name>
     <description>Camel JSON Object Signing and Encryption (JOSE) support</description>
 
@@ -42,23 +41,17 @@
     <dependencies>
         <dependency>
             <groupId>org.apache.camel</groupId>
-            <artifactId>camel-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.camel</groupId>
             <artifactId>camel-jackson</artifactId>
         </dependency>
         <dependency>
             <groupId>org.bitbucket.b_c</groupId>
             <artifactId>jose4j</artifactId>
-            <version>0.4.4</version>
-            <scope>compile</scope>
+            <version>0.6.3</version>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.4</version>
-            <scope>compile</scope>
         </dependency>
 
         <!-- Testing -->
